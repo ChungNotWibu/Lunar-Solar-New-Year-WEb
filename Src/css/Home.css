@@ -1,0 +1,36 @@
+body{
+    background-image: url(pic/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.Home-galeri{
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 6%;
+    margin-bottom: 30%;
+}
+
+.Home-galeri > div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    transition: all .8s cubic-bezier(.25 , .4 , .45 , 1.4);
+}
+
+.Home-galeri > div:hover{
+    flex: 5;
+}
+
+.HappyNewYear{
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 34%;
+    margin-right: 34%;
+}
