@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="import" href="Sign.html">
     <link rel="stylesheet" href="css/Home.css">
     <link rel="stylesheet" href="css/Contact.css">
     <link rel="stylesheet" href="css/NavBar.css">
@@ -19,64 +20,65 @@
 
 <body>
     <!-- =========== Navbar ============ -->
-<header>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="search">
-             <input type="text" class="input" placeholder="Search...">
-            <button class="btn">
-                <i class="fas fa-search"></i>
-            </button>
-            <script src="js/searchbar.js"></script>
-        </div>
-        <a href="#">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">Picture</a>
-        <a href="#">Contact</a>
-        
-        <li><button class="login-button" onclick="document.getElementById('id01').style.display='block'"
-            style="width:auto;">Login</button>
-        <div id="id01" class="modal">
+    <header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="search">
+                <input type="text" class="input" placeholder="Search...">
+                <button class="btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <script src="js/searchbar.js"></script>
+            </div>
+            <a href="#Home">Home</a>
+            <a href="#Shop">Shop</a>
+            <a href="#">Picture</a>
+            <a href="#">Contact</a>
 
-            <form class="modal-content animate" action="" method="post">
-                <div class="imgcontainer">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                        title="Close Modal">&times;</span>
-                    <img src="css/pic/img_avatar.png" alt="Avatar" class="avatar">
+            <li><button class="login-button" onclick="document.getElementById('id01').style.display='block'"
+                    style="width:auto;">Login</button>
+                <div id="id01" class="modal">
+
+                    <form class="modal-content animate" action="" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                title="Close Modal">&times;</span>
+                            <img src="css/pic/img_avatar.png" alt="Avatar" class="avatar">
+                        </div>
+
+                        <div class="container">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required id="sign-in_username">
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required
+                                id="sign-in_password">
+
+                            <button onclick="signin()" class="login-button" type="submit">Login</button>
+                            <h2>No account<a href="http://127.0.0.1:5501/Src/sign.html" target="_blank">Sign In</a></h2>
+                        </div>
+                    </form>
+                    <script src="js/login.js"></script>
+                    <script src="js/sign.js"></script>
                 </div>
-
-                <div class="container">
-                    <label for="uname"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required id="sign-in_username">
-
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required id="sign-in_password">
-
-                    <button onclick="signin()" class="login-button" type="submit">Login</button>
-                    <h2>No account<a href="http://127.0.0.1:5501/Src/sign.html" target="_blank">Sign In</a></h2>
-                </div>
-            </form>
-            <script src="js/login.js"></script>
-            <script src="js/sign.js"></script>
+            </li>
         </div>
-    </li>
-    </div>
 
-    
-        
-    
-    <div id="main">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-    </div>
-<script src="js/menu.js"></script>
-</header>
-    
-        
-    
+
+
+
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+        </div>
+        <script src="js/menu.js"></script>
+    </header>
+
+
+
     <!-- ================================ -->
 
     <div class="HappyNewYear">
-    <img src="css/pic/2023_Happy_New_Year_PNG_Clipart-removebg-preview.png" alt="">
+        <img src="css/pic/2023_Happy_New_Year_PNG_Clipart-removebg-preview.png" alt="">
     </div>
 
     <!-- ============= Home ============= -->
@@ -84,17 +86,92 @@
 
 
     <div class="Home-galeri">
-        <div style="background-image: url(css/pic/Home.png);" onclick=""></div>
+        <div style="background-image: url(css/pic/Home.png);" onclick="window.open('#Home')"></div>
+
         <div style="background-image: url(css/pic/picture.png);" onclick=""></div>
         <div style="background-image: url(css/pic/SHop.png);" onclick=""></div>
         <div style="background-image: url(css/pic/Contact.png);" onclick=""></div>
-        
+
     </div>
 
     <!-- ================================ -->
 
     <div>
-        
+        <div class="ContainerHome" id="Home">
+            <h1>About Lunar New Year :</h1>
+            <br>
+            <h2>● What is Lunar New Year :</h2>
+            <br>
+            <p>ㅤㅤ is the beginning of a lunar calendar or lunisolar calendar year, whose months are moon cycles. The
+                event is celebrated by numerous cultures in various ways at diverse dates.
+
+                The more well-known celebrations include New Year's Day (or week) in the Chinese calendar and Tibetan
+                calendar of East Asia,the Buddhist and Hindu calendars of Southeast and South Asia, and the
+                Islamic and Jewish calendars that originated in the Middle East. It is also celebrated by the Nisga'a
+                people of Canada. The determination of the first day of a new lunar year varies by culture.</p>
+
+            <br>
+
+            <h2>● Definition</h2>
+            <p>ㅤThe Lunar New Year is an event celebrated by millions of people across the world on the first new moon
+                of their calendar. Although often referred to as "Lunar New Year" in English, this is a misnomer, as it
+                refers to both celebrations based on a lunar calendar as well as a lunisolar calendar. The Islamic New
+                Year (also called the Hijri New Year or 1 Muharram) is determined by the Hijri calendar, a purely lunar
+                calendar that ignores the solar cycle that is used to reset lunisolar calendars.[4] Lunar New Year
+                celebrations in East and Central Asia, such as Chinese New Year, are based on a lunisolar calendar.
+                Chinese New Year usually falls on the second new moon after the winter solstice (rarely the third if an
+                intercalary month intervenes). Some Lunar New Year celebrations, such as in Korea and Vietnam,
+                generally fall on the same day as the Chinese celebration in late January or February, due to being
+                based on the Chinese calendar or a variation of it. However celebration customs and holiday durations
+                may differ. Lunisolar New Year celebrations of other cultures such as Burmese, Cambodian, Lao, Sri
+                Lankan, and Thai people are based on the Buddhist calendar and occur in mid-April.
+
+                In the United States of America, Lunar New Year is strongly associated with Chinese Americans and
+                "Chinese New Year" is commonly used as a translation by people of non-Chinese backgrounds. Chinese
+                New Year is the official name of the celebration and holiday in some countries such as Singapore,
+                Brunei, and Malaysia.However the celebration has officially been known as "Spring Festival" in
+                China since the founding of the Republic of China in 1911 when the previous name, "Yuandan" (The First
+                Day), was assigned to the first day of the Gregorian calendar. Chinese people outside China refer to it
+                as both Lunar New Year as well as Chinese New Year. Since at least the mid-2010s, there has been
+                criticism in America of using the term "Chinese New Year" in an official capacity, particularly by
+                Korean and Vietnamese people. Some American politicians have avoided using the term "Chinese New Year"
+                in preference for "Lunar New Year"
+            
+            <br>    
+            <h2>● Celebrations</h2>
+            <p>ㅤChina, Taiwan, South Korea, and Vietnam celebrate the Lunisolar New Year on the same date. Japan,
+                excluding the Ryukyu islands, now only celebrates the solar new year apart from a remnant of the
+                lunisolar celebration called Little New Year (小正月, koshōgatsu) occurring on the 15th day of the first
+                lunar month for Japanese calendar
+
+                Tibetans and Mongols celebrate New Year in February or early March, based on the closely related Tibetan
+                calendars. Chinese-Mongols celebrate Tsagaan Sar according to Chinese calendar. The Uyghurs adopted the
+                Chinese calendar, and the Mongols and Tibetans adopted the Tibetan calendar. Depending on the year, the
+                Tibetan New Year can either coincide with the Chinese New Year, or take place around one month later.
+            
+            <br>    
+            <h2>● Lunar New Year isn't exactly the same as Chinese New Year</h2>
+            <p>ㅤThe Lunar New Year isn't only observed in China; it's celebrated across several countries and other
+                territories in Asia, including South Korea and Singapore. In Vietnam, Lunar New Year is known as Tết,
+                and in Tibet it's Losar.
+            <div id="google_translate_element">
+                <p><b>Translate</b></p>
+
+
+                <div class="Trans">
+                </div>
+            </div>
+
+
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                }
+            </script>
+
+            <script type="text/javascript"
+                src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </div>
     </div>
 
 
