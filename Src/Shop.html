@@ -1,13 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping-card</title>
+   
+    <link rel="stylesheet" href="css/Shop.css" />
+    <link rel="stylesheet" href="css/reponsive.css" />
 </head>
+
 <body>
+    <!-- header -->
+    <header>
+        <nav>
+            
+            <!-- The Modal -->
+            <button id="cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                Giỏ Hàng
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0VNĐ</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- content -->
+    <section class="wrapper">
+        <div class="products">
+            <ul>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="css/pic/Lì xì.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Lì xì</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">250000đ</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="css/pic/chậu hoa.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Chậu hoa trang trí</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">299000đ</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="css/pic/đèn.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Dàn nháy trang trí </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">159900đ</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="css/pic/túi.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Túi đeo họa tiết con mèo</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">89000đ</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="css/pic/Meowmuscle.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Tượng mèo thần tài cơ bắp</h3>
+                        </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">219000đ</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="css/pic/thiệp.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Tranh dán tường họa tiết xuân quý mão</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">115000đ</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="css/pic/giấy.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Combo quạt giấy và liễn trang trí</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">100000đ</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="css/pic/lồng.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Lồng đèn trang trí có đèn led</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">85000đ</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
     
-    
-</body>
+
+
+
+    <div class="food-table__header">
+        <h1 class="food-table__header__heading">Your shopping cart</h1>
+        <div class="food-table__header__orange-rectangle"></div>
+      </div>
+
+    <div class="Cart">
+      <div id="list-item">
+        <fieldset>
+          <legend><h3>Shopping cart</h3></legend>
+          <label>Item: <input type="text" name="name" id="name" /></label>
+          <label>Quantity: <input type="text" name="data" id="data" /></label>
+        
+          <input type="button" class="savebtn" value="save" onclick="addToCart()" />
+          <input type="button" class="updatebtn" value="update" onclick="modifyItem()" />
+          <input type="button" class="deletebtn" value="delete" onclick="removeItem()" />
+        </fieldset>
+        <div id="items-table">
+          <h2>Shopping list</h2>
+          <table id="table"></table>
+          <label><input type="button" value="clear" class="clearbtn" onclick="clearAll()">* Delete all items</label>
+        </div>
+      </div>
+      <script src="js/shopping.js"></script>
+    </div>
+
+    <script src="home.js"></script>
 </html>
